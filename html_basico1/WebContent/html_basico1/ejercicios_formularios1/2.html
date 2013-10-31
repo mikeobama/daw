@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario2</title>
+</head>
+<body>
+<form name="input" action="formulario.php" method=“post”>
+		<label for="nombre">Ingrese su nombre: </label>
+		<input type="text" id="nombre" /><br />
+		<label for="email" > Ingrese su mail:</label> 
+		<!-- se puede usar el type text para este campo tb pero con email bueno para teclado moviles -->
+		<input type="email" id="email" name="mail" /><br />
+		<label for="comentario">Comentarios: </label><br />
+		<textarea rows="4" id="comentario" cols="40"></textarea><br />	
+		<input type="submit" value="Enviar" /><br />
+</form>
+</body>
+</html>

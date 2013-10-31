@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario1</title>
+</head>
+<body>
+
+	<form name="input" action="formulario.php" method=“post”>
+		<label for="nombre">Ingrese su nombre:</label>
+		<!-- la etiqueta label nos coloca el focus en donde digamos
+		(el valor for) al pulsar el elemento  -->
+		 <input type="text" name="nombre" id="nombre" /><br />
+		Lenguajes que conoce:<br /> 
+		<input type="checkbox" name="lenguajes" value="c"/>C<br />
+		<input type="checkbox" name="lenguajes" value="java"/>Java<br /> 
+		<input type="checkbox" name="lenguajes" value="py" />Python <br />  
+		<input type="submit" value="Enviar" /><br />
+
+	</form>
+</body>
+</html>
