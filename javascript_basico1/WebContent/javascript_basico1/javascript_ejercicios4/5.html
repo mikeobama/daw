@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function añadir() {
+  var listado = document.getElementById("lista");
+	var nuevoElemento='<li>Peter</li>'
+	var nuevoElemento1='<li>Griffin</li>'
+	listado.innerHTML=listado.innerHTML+nuevoElemento+nuevoElemento1
+}
+</script>
+</head>
+<body>
+<ul id="lista">
+<li>asdñfljasfljasdfkl</li>
+<li>asdñfljasfljasdfkl</li>
+<li>asdñfljasfljasdfkl</li>
+<li>asdñfljasfljasdfkl</li>
+
+
+</ul>
+<button onclick="añadir()">Añadir elemento</button>
+</body>
+</html>

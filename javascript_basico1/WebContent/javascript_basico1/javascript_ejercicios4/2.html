@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+function eliminaTexto(){
+	alert('Se va a eliminar el texto de la página')
+	document.getElementById("textoweb").innerHTML='Nuevo texto'
+	alert('Texto machacado')
+}
+</script>
+<body onload="eliminaTexto()"> <!-- se carga despues de que se haya cargado todo -->
+<p id='textoweb'>
+Este texto se eliminará
+</p>
+
+</body>
+</html>
+<!-- Nos hace falta una funcion, porque si no , el document.getElementById daria error,
+ya que no existiria todavia el elemento textoweb
+el evento onload se dispara una vez qeu toda la pagina esta cargada
+podriamos haberlo hecho tambien sin concatenar funciones, mediante:
+var parrafo=document.getElementById('textoweb')
+parrafo.innerHTML='Nuevo texto'
+ -->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Expresiones Regulares</title>
+</head>
+<body>
+	<script type="text/javascript">	
+	
+	
+	do{
+		var nombre = (prompt("Introduce nombre"));
+	}while (!comprobar_datos(nombre,'texto'))
+		
+	do{
+		var apellidos = (prompt("Introduce apellido"));
+	}while (!comprobar_datos(apellidos,'texto'))
+		
+	do{
+		var dni = (prompt("Introduce dni"));
+	}while (!comprobar_datos(dni,'dni'))
+		
+	do{
+		var telefono = (prompt("Introduce telefono"));
+	}while (!comprobar_datos(telefono,'telefono'))
+		
+	do{
+		var email = (prompt("Introduce email"));
+	}while (!comprobar_datos(email,'email'))
+		
+	//document.write(nombre.test([0-9]))
+	
+	
+	var apellido = prompt("Introduce apellido");
+	
+	
+	function comprobar_datos(cadena,tipo_campo){
+		switch (tipo_campo){
+		case "texto":
+			var patron=/^D+$/;
+			break;
+		case 'telefono':
+			var patron /^\d{9}$/;
+			break;
+		case 'dni':
+			var patron /^\d{8}[a-zA-Z]$/;
+			break;
+		case 'correo':
+			var patron /^(.+\@.+\..+)$/;
+			break;
+		}
+		return patron.test(cadena)
+	}
+	
+	</script>
+</body>
+</html>

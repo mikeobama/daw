@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.oculto { display: none; }
+.visible { display: inline; }
+</style>
+<script type="text/javascript">
+
+function muestra() {
+  var elemento = document.getElementById("adicional");
+  elemento.className = "visible";
+ 
+  var enlace = document.getElementById("enlace");
+  enlace.className = "oculto";
+}
+</script>
+</head>
+<body>
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, 
+commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, 
+luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. 
+<span id="adicional" class="oculto">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, 
+commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, 
+luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+</span>
+</p>
+ <!-- RETURN FALSE para que el enlace no redireccione-->
+<a id="enlace" href="#" onclick="muestra(); return false;" >Seguir leyendo</a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">	
+	
+	var a = parseInt(prompt("Introduce numero"));
+	var b = parseInt(prompt("Introduce numero"));
+	while(a*0!=0 || b*0!=0){
+		var a = parseInt(prompt("Introduce numero"));
+		var b = parseInt(prompt("Introduce numero"));
+	}
+	if(a>b){
+		document.write('Es mayor')
+	}else{
+		document.write(a+' es menor que '+b+'</br>')
+	}
+	if(b>0){
+		document.write(b +' es positivo'+'</br>')
+	}
+	if(a<0){
+		document.write(a +' es negativo'+'</br>')
+	}
+	a+=b
+	if(a>b){
+		document.write('ahora '+a+' es mayor '+b+'</br>')
+	}	
+	
+	</script>
+</body>
+</html>
